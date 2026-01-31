@@ -163,9 +163,14 @@ class Carousel {
 
 // Inicializar carrusel cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
-    const carouselElement = document.querySelector('.guide-carousel');
-    if (carouselElement) {
-        new Carousel(carouselElement);
+    const guideCarousel = document.querySelector('.guide-carousel');
+    if (guideCarousel) {
+        new Carousel(guideCarousel);
+    }
+
+    const resultsCarousel = document.querySelector('.results-carousel');
+    if (resultsCarousel) {
+        new Carousel(resultsCarousel);
     }
 });
 
